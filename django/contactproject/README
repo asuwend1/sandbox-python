@@ -1,0 +1,14 @@
+django-admin startproject contactproject
+
+python3 manage.py runserver
+
+python3 manage.py startapp contactslist
+
+python3 manage.py makemigrations contactslist
+python3 manage.py sqlmigrate contactslist 0001
+python3 manage.py migrate
+
+python3 manage.py createsuperuser
+
+http://127.0.0.1:8000/admin (admin, c*)
+http://127.0.0.1:8000/static/test.jpg
